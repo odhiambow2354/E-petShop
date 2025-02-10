@@ -8,32 +8,32 @@ import dog from "./dog.png";
 import rabbit from "./rabbit.png";
 import fish from "./fish.png";
 import bird from "./bird.png";
-import banner1 from "./banner1.png";
+import banner3 from "./banner3.png";
 
 //pets
 import b1 from "./b1.jpg";
-import b2 from "./food_2.jpg";
+import b2 from "./b2.jpg";
 import b3 from "./b3.png";
 import b4 from "./b4.png";
 import b5 from "./b5.png";
 import c from "./c.png";
 import c1 from "./c1.png";
-import c2 from "./c2.png";
-import c3 from "./c3png";
+import c2 from "./c2.jpg";
+import c3 from "./c3.jpg";
 import c4 from "./c4.png";
 import c5 from "./c5.png";
 import d from "./d.png";
-import d1 from "./d1.png";
-import d2 from "./d2.png";
-import d3 from "./d3.png";
-import d4 from "./d4.png";
-import r1 from "./r1.png";
-import r2 from "./r2.png";
-import r3 from "./r3.png";
-import f1 from "./f1.png";
-import f2 from "./f2.png";
-import f3 from "./f3.png";
-import f4 from "./f4.png";
+import d1 from "./d1.jpg";
+import d2 from "./d2.jpg";
+import d3 from "./d3.jpg";
+import d4 from "./d4.jpg";
+import r1 from "./r1.jpg";
+import r2 from "./r2.jpg";
+import r3 from "./r3.jpg";
+import f1 from "./f1.jpg";
+import f2 from "./f2.jpg";
+import f3 from "./f3.jpg";
+import f4 from "./f4.jpg";
 
 //pet food
 import bird1 from "./bird1.png";
@@ -73,7 +73,7 @@ import parcel_icon from "./parcel_icon.png";
 export const assets = {
   logo,
   header_img,
-  banner1,
+  banner3,
   search_icon,
   rating_starts,
   add_icon_green,

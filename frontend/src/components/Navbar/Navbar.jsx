@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { StoreContext } from "../../Context/StoreContext";
 
 export const Navbar = ({ setShowLogin }) => {
-  const [menu, setMenu] = useState("home");
+  const [pet, setPet] = useState("home");
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
 
   const navigate = useNavigate();
@@ -23,32 +23,32 @@ export const Navbar = ({ setShowLogin }) => {
       <Link to="/">
         <img src={assets.logo} alt="" className="logo" />
       </Link>
-      <ul className="navbar-menu">
+      <ul className="navbar-pet">
         <Link
           to="/"
-          onClick={() => setMenu("home")}
-          className={menu === "home" ? "active" : ""}
+          onClick={() => setPet("home")}
+          className={pet === "home" ? "active" : ""}
         >
           home
         </Link>
         <a
-          href="#explore-menu"
-          onClick={() => setMenu("menu")}
-          className={menu === "menu" ? "active" : ""}
+          href="#explore-pet"
+          onClick={() => setPet("pet")}
+          className={pet === "pet" ? "active" : ""}
         >
           pets
         </a>
         <a
           href="#app-download"
-          onClick={() => setMenu("mobile-app")}
-          className={menu === "mobile-app" ? "active" : ""}
+          onClick={() => setPet("mobile-app")}
+          className={pet === "mobile-app" ? "active" : ""}
         >
           mobile-app
         </a>
         <a
           href="#footer"
-          onClick={() => setMenu("contact us")}
-          className={menu === "contact us" ? "active" : ""}
+          onClick={() => setPet("contact us")}
+          className={pet === "contact us" ? "active" : ""}
         >
           contact us
         </a>

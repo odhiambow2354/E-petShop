@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.css";
 import Header from "../../components/Header/Header";
-import ExploreMenu from "../../components/ExploreMenu/ExploreMenu";
+import ExplorePet from "../../components/ExplorePet/ExplorePet";
 import FoodDisplay from "../../components/FoodDisplay/FoodDisplay";
 import AppDownload from "../../components/AppDownload/AppDownload";
 
@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <ExploreMenu category={category} setCategory={setCategory} />
+      <ExplorePet category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />
       <AppDownload />
     </div>
