@@ -15,6 +15,7 @@ function Cart() {
         <div className="cart-items-title">
           <p>Items</p>
           <p>Title</p>
+          <p>Description</p>
           <p>Price</p>
           <p>Quantity</p>
           <p>Total</p>
@@ -32,6 +33,7 @@ function Cart() {
                 >
                   <img src={url + "/images/" + item.image} alt="" />
                   <p>{item.name}</p>
+                  <p>{item.description}</p>
                   <p>Ksh: {item.price}</p>
                   <p>{cartItems[item._id]}</p>
                   <p>Ksh: {item.price * cartItems[item._id]}</p>

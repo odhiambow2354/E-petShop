@@ -59,7 +59,7 @@ const Add = ({ url }) => {
           />
         </div>
         <div className="add-product-name flex-col">
-          <p>Pet Meal Name</p>
+          <p>Name Of Product</p>
           <input
             onChange={onChangeHandler}
             value={data.name}
@@ -70,7 +70,7 @@ const Add = ({ url }) => {
           />
         </div>
         <div className="add-product-description flex-col">
-          <p>Meal Description</p>
+          <p>Description of Product</p>
           <textarea
             onChange={onChangeHandler}
             value={data.description}
@@ -96,7 +96,7 @@ const Add = ({ url }) => {
             </select>
           </div>
           <div className="add-price flex-col">
-            <p>Price for Meal</p>
+            <p>Price for Product</p>
             <input
               onChange={onChangeHandler}
               value={data.price}
@@ -108,7 +108,7 @@ const Add = ({ url }) => {
           </div>
         </div>
         <button type="submit" className="add-btn">
-          Add Meal
+          Add Now
         </button>
       </form>
     </div>
