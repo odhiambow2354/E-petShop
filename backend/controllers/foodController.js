@@ -15,10 +15,10 @@ const addFood = async (req, res) => {
   });
   try {
     await food.save();
-    res.json({ success: true, message: "Food added successfully" });
+    res.json({ success: true, message: "Product added successfully" });
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: "Failed to add food" });
+    res.json({ success: false, message: "Failed to add product" });
   }
 };
 
@@ -29,7 +29,7 @@ const listFood = async (req, res) => {
     res.json({ success: true, data: foods });
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: "Failed to fetch food" });
+    res.json({ success: false, message: "Failed to fetch product" });
   }
 };
 
@@ -39,10 +39,10 @@ const removeFood = async (req, res) => {
     const food = await foodModel.findById(req.body.id);
     fs.unlink(`uploads/${food.image}`, () => {});
     await foodModel.findByIdAndDelete(req.body.id);
-    res.json({ success: true, message: "Food removed successfully" });
+    res.json({ success: true, message: "Product removed successfully" });
   } catch (error) {
     console.log(error);
-    res.json({ success: false, message: "Failed to remove food" });
+    res.json({ success: false, message: "Failed to remove product" });
   }
 };
 
