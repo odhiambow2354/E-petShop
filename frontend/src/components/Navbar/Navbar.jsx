@@ -38,14 +38,7 @@ export const Navbar = ({ setShowLogin }) => {
         >
           pets
         </a>
-        <a
-          href="#app-download"
-          onClick={() => setPet("mobile-app")}
-          className={pet === "mobile-app" ? "active" : ""}
-        >
-          mobile-app
-        </a>
-        <a
+            <a
           href="#footer"
           onClick={() => setPet("contact us")}
           className={pet === "contact us" ? "active" : ""}

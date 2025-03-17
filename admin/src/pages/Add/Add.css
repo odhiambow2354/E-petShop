@@ -1,39 +1,118 @@
 .add {
-  width: 70%;
-  margin-top: 50px;
-  color: #6d6d6d;
-  margin-left: max(5vw, 25px);
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  color: #4a4a4a;
   font-size: 16px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .add form {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
+
+/* Image Upload */
+.add-img-upload {
+  align-items: center;
+  text-align: center;
+}
+
 .add-img-upload img {
-  width: 120px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
+
+.add-img-upload img:hover {
+  border-color: #ff7f50;
+}
+
+.add-img-upload p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Input Fields */
 .add-product-name,
-.add-product-description {
-  width: 300px;
-  padding: 10px;
+.add-product-description,
+.add-category,
+.add-price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.add-product-name,
-.add-product-description textarea {
-  padding: 10px;
+
+.add input,
+.add textarea,
+.add select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
 }
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+/* Category & Price Section */
 .add-category-price {
   display: flex;
-  gap: 30px;
+  gap: 20px;
 }
-.add-category-price select .add-category-price input {
-  padding: 10px;
-  max-width: 150px;
+
+.add-category,
+.add-price {
+  flex: 1;
 }
+
+/* Button */
 .add-btn {
-  max-width: 120px;
-  border: none;
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
   background-color: #ff7f50;
   color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
+
+.add-btn:hover {
+  background-color: #e66d3d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .add {
+    width: 90%;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .add-btn {
+    font-size: 14px;
+  }
+}
+

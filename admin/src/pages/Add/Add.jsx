@@ -8,7 +8,7 @@ const Add = ({ url }) => {
   const [data, setData] = useState({
     name: "",
     description: "",
-    category: "Bird",
+    category: "Dog",
     price: "",
   });
   const onChangeHandler = (e) => {

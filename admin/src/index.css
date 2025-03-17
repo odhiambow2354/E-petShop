@@ -1,29 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Outfit";
-}
-body {
-  background-color: #fcfcfc;
-  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
 }
 
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Global Styles */
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.3s ease;
 }
+
+a:hover {
+  color: #ff7f50;
+}
+
 hr {
   border: none;
-  height: 1px;
-  background-color: #a9a9a9;
+  height: 2px;
+  background-color: #dcdcdc;
+  margin: 10px 0;
 }
+
+/* Layout */
 .app-content {
   display: flex;
+  height: calc(100vh - 60px);
+  gap: 20px;
+  padding: 20px;
 }
+
+/* Sidebar & Content Adjustments */
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Utility Classes */
 .flex-col {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-content {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+

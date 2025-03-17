@@ -75,7 +75,7 @@ const Orders = ({ url }) => {
               onChange={(e) => statusHandler(e, order._id)}
               value={order.status}
             >
-              <option value="Food Processing">Food Processing</option>
+              <option value="Order Processing">Order Processing</option>
               <option value="Out for Delivery">Out for Delivery</option>
               <option value="Delivered">Delivered</option>
             </select>
